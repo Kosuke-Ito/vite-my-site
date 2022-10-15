@@ -11,25 +11,31 @@ defineProps({
 </script>
 
 <template>
-<header>
-  <h1>{{ msg }}</h1>
-  <ul>
-    <li v-for="(item, key) in items" :key="key">
-      {{ item }}
-    </li>
-  </ul>
-</header>
-<div id="content">
-  <Engineering />
-  <Photograph />
-</div>
+  <header class="navbar bg-base-100 bg-primary accent">
+    <div class="flex-1 btn">
+      <h1 class="text-3xl font-bold">
+        <a>{{ msg }}</a>
+      </h1>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal p-0">
+        <li v-for="(item, key) in items" :key="key">
+          <a>{{ item }}</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div id="content">
+    <Engineering />
+    <Photograph />
+  </div>
 </template>
 
 <style scoped>
-header{display: flex;align-items: center;margin: 0 1rem;}
-#content{background-color: blue;}
+header{align-items: center;margin: 1rem;}
+#content{background-color: blue; padding: 0 1rem;}
 h1{margin-right: auto;}
-ul {list-style: none; display: flex;}
+ul {list-style: none;}
 li{margin-right: 1rem;}
 
 
