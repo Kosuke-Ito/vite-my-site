@@ -5,7 +5,7 @@ import { ref } from 'vue'
 </script>
 
 <template>
-<div id="Engineering">
+<div id="Engineering" class="container w-1/2">
   <h2>Engineering</h2>
 </div>
 </template>
