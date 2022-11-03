@@ -5,7 +5,7 @@ import TopPage from "./components/pages/TopPage.vue";
 </script>
 
 <template>
-  <TopPage />
+  <TopPage msg="Kosuke Ito Portfolio"/>
 </template>
 
 <style scoped>
