@@ -1,21 +1,38 @@
 <script setup>
 import { ref } from 'vue'
-import Header from "../containers/Header.vue"
-import Engineering from "../containers/Engineering.vue"
-import Photograph from "../containers/Photograph.vue"
+defineProps({
+  msg: String
+})
+const items = ref(["works", "about", "blogs", "contact"])
 </script>
 
 <template>
-  <Header msg="Kosuke Ito Portfolio"/>
-  <div id="content flex">
-    <Engineering />
-    <Photograph />
+  <div class="navbar flex">
+    <div class="flex-1">
+      <a class="text-xl font-bold" href="#">
+        <h1>{{ msg }}</h1>
+      </a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal">
+        <li class="font-bold" tabindex="0">work</li>
+        <li class="font-bold">about</li>
+        <li class="font-bold">blogs</li>
+        <li class="font-bold">contact</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="container" class="flex">
+    <div id="Engineering" class="basis-1/2">
+      <h2>Engineering</h2>
+    </div>
+
+    <div id="photograph" class="basis-1/2">
+      <h2>Photograph</h2>
+    </div>
   </div>
 </template>
 
 <style scoped>
-#content{background-color: blue; padding: 0 1rem;}
-h1{margin-right: auto;}
-ul {list-style: none;}
-li{margin-right: 1rem;}
 </style>
