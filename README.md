@@ -5,10 +5,13 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 ## Setup
 - Install [Node.js](https://nodejs.org/en/download/)
-Official Site or Use Package Manager
+
+Install From Official Site or Use Package Manager
+
 - Install [Tailwind CSS & PostCSS](https://tailwindcss.com/docs/installation)
-$ npm install -D tailwindcss
+```
 $ npm install -D tailwindcss postcss autoprefixer
+```
 
 ## Recommended IDE Setup
 
