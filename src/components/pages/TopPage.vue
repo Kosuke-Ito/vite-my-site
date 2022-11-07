@@ -3,7 +3,7 @@ import { ref } from 'vue'
 defineProps({
   msg: String
 })
-const items = ref(["works", "about", "blogs", "contact"])
+const items = ref(["about", "blog", "contact"])
 </script>
 
 <template>
@@ -15,24 +15,23 @@ const items = ref(["works", "about", "blogs", "contact"])
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal">
-        <li class="font-bold" tabindex="0">work</li>
-        <li class="font-bold">about</li>
-        <li class="font-bold">blogs</li>
-        <li class="font-bold">contact</li>
+        <li v-for="item in items" :key="item.key" class="text-lg font-bold">
+          <a :href="`/${item}`">{{item}}</a>
+        </li>
       </ul>
     </div>
   </div>
   
   <div id="container" class="flex">
-    <div id="Engineering" class="basis-1/2">
+    <div id="Engineering" class="flex-1">
       <h2>Engineering</h2>
     </div>
-
-    <div id="photograph" class="basis-1/2">
+    <div id="photograph" class="flex-none">
       <h2>Photograph</h2>
     </div>
   </div>
 </template>
 
 <style scoped>
+.navbar{padding: 1rem;}
 </style>
