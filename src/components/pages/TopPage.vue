@@ -24,7 +24,7 @@ const items = ref(["about", "blog", "contact"])
   
   <div id="container" class="flex">
     <div id="Engineering" class="flex-1">
-      <h2>Engineering</h2>
+      <h2>Engineerings</h2>
     </div>
     <div id="photograph" class="flex-none">
       <h2>Photograph</h2>
