@@ -1,37 +1,22 @@
 <script setup>
 import { ref } from 'vue'
-defineProps({
-  msg: String
-})
-const items = ref(["about", "blog", "contact"])
+import Navbar from '../parts/Navbar.vue';
+
 </script>
 
 <template>
-  <div class="navbar flex">
-    <div class="flex-1">
-      <a class="text-xl font-bold" href="#">
-        <h1>{{ msg }}</h1>
-      </a>
-    </div>
-    <div class="flex-none">
-      <ul class="menu menu-horizontal">
-        <li v-for="item in items" :key="item.key" class="text-lg font-bold">
-          <a :href="`/${item}`">{{item}}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
+  <Navbar msg="Kosuke Ito Portfolio"/>
+
   <div id="container" class="flex">
-    <div id="Engineering" class="flex-1">
+    <div id="Engineering">
       <h2>Engineerings</h2>
     </div>
-    <div id="photograph" class="flex-none">
+    <div id="photograph">
       <h2>Photograph</h2>
     </div>
   </div>
 </template>
 
 <style scoped>
-.navbar{padding: 1rem;}
+
 </style>
