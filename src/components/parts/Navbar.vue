@@ -21,7 +21,7 @@ const items = ref(["about", "blog", "contact"])
 </template>
 
 <style scoped>
-.navbar{padding: 1rem;display: flex;}
+.navbar{padding: 1rem;display: flex;justify-content: space-between;align-items: center;}
 .menu{display: flex;}
-.menu li{flex: 1 0 auto;}
+.menu li{margin-left: 1rem;font-size: 1.2rem;}
 </style>
