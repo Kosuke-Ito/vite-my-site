@@ -1,20 +1,18 @@
 <script setup>
 import { ref } from 'vue'
 import Navbar from '../parts/Navbar.vue';
+import Engineering from '../parts/Engineering.vue';
+import Photograph from '../parts/Photograph.vue';
 
 </script>
 
 <template>
-  <Navbar msg="Kosuke Ito Portfolio"/>
+<Navbar msg="Kosuke Ito Portfolio"/>
 
-  <div id="container" class="flex">
-    <div id="Engineering">
-      <h2>Engineerings</h2>
-    </div>
-    <div id="photograph">
-      <h2>Photograph</h2>
-    </div>
-  </div>
+<div id="container">
+  <Engineering />
+  <Photograph />
+</div>
 </template>
 
 <style scoped>
