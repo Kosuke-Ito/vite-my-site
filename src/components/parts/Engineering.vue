@@ -20,6 +20,5 @@ import { ref } from 'vue'
   align-items: center;
   background-color: cadetblue;
 }
-h2{font-size: 5rem;margin: 0;}
 
 </style>

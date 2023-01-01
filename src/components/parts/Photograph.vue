@@ -16,11 +16,8 @@ import { ref } from 'vue'
   height: 20rem;
   text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: pink;
 }
-h2{font-size: 5rem;margin: 0;}
-
 </style>
