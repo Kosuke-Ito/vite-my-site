@@ -4,7 +4,7 @@ import { ref } from 'vue'
 defineProps({
   msg: String
 })
-const items = ref(["about", "blog", "contact"])
+const items = ref(["works", "about"])
 </script>
 
 <template>

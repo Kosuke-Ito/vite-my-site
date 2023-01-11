@@ -4,9 +4,9 @@ import { ref } from 'vue'
 </script>
 
 <template>
-<div id="engineering">
-  <h2>Engineering</h2>
-</div>
+  <a id="engineering" href="/engineering">
+    <h2>Engineering</h2>
+  </a>
 </template>
 
 
@@ -15,6 +15,7 @@ import { ref } from 'vue'
   margin:1rem;
   height: 20rem;
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: center;

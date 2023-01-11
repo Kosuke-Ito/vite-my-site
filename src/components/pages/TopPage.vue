@@ -7,14 +7,17 @@ import Photograph from '../parts/Photograph.vue';
 </script>
 
 <template>
-<Navbar msg="Kosuke Ito Portfolio"/>
+<Navbar msg="Kosuke Ito"/>
 
-<div id="container">
+<div class="container">
   <Engineering />
   <Photograph />
 </div>
 </template>
 
 <style scoped>
-
+.container{
+  display: flex;
+  width: 100%;
+}
 </style>

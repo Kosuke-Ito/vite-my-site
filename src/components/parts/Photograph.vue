@@ -1,19 +1,20 @@
-<script>
+<script setup>
 import { ref } from 'vue'
 
 </script>
 
 
 <template>
-<div id="photograph">
+<a id="photograph">
   <h2>Photograph</h2>
-</div>
+</a>
 </template>
 
 <style scoped>
 #photograph{
   margin:1rem;
   height: 20rem;
+  width: 50%;
   text-align: center;
   display: flex;
   justify-content: center;
